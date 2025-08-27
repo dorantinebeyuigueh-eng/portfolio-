@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+   
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Work Together</h2>
+                <p>Ready to bring network expertise and modern web development skills to your team. Open to full-time
+                    opportunities, freelance projects, and consulting work.</p>
+            </div>
+             <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="window.location.href='index.html'">
+                        View My Experience
+                        <i data-lucide=""></i>
+                    </button>
+                    <button class="btn btn-outline" onclick="window.location.href='projects.html'">My projects</button>
+            
+             </div>
+            <div class="contact-grid">
+                <!-- Contact Information -->
+                <div class="contact-left">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <h3>Contact Information</h3>
+                        </div>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <a href="mailto:dorantinebeyuigueh@gmail.com">dorantinebeyuigueh@gmail.com</a>
+                                </div>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <div>
+                                    <div class="contact-label">Phone</div>
+                                    <a href="tel:+237671608849">+1 (237)671,608,849</a>
+                                </div>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="map-pin"></i>
+                                <div>
+                                    <div class="contact-label">Location</div>
+                                    <span>Buea, Cameroon</span>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="linkedin"></i>
+                                <div>
+                                    <div class="contact-label">LinkedIn</div>
+                                    <a
+                                        href="https://linkedin.com/in/beyuiguehdorantine">linkedin.com/in/beyuiguehdoratine</a>
+                                </div>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="github"></i>
+                                <div>
+                                    <div class="contact-label">GitHub</div>
+                                    <a
+                                        href="https://github.com/dorantinebeyuigueh-eng">github.com/dorantinebeyuigueh-eng</a>
+                                </div>
+                                <i data-lucide="external-link"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--<div class="contact-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="download"></i>
+                            </div>
+                            <h3>Resources</h3>
+                        </div>
+                        <div class="contact-resources">
+                            <button class="btn btn-primary btn-full">
+                                <i data-lucide="download"></i>
+                                Download Resume (PDF)
+                            </button>
+                            <button class="btn btn-outline btn-full">
+                                <i data-lucide="external-link"></i>
+                                View Portfolio Presentation
+                            </button>
+                        </div>
+                    </div>-->
+                </div>
+
+                <!-- Availability & Ready to Connect -->
+                <div class="contact-right">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i data-lucide="external-link"></i>
+                            </div>
+                            <h3>Current Availability</h3>
+                        </div>
+                        <div class="availability-list">
+                            <div class="availability-item">
+                                <span>Full-time Opportunities</span>
+                                <span class="availability-status available">Available</span>
+                            </div>
+                            <div class="availability-item">
+                                <span>Freelance Projects</span>
+                                <span class="availability-status available">Currently Available</span>
+                            </div>
+                            <div class="availability-item">
+                                <span>Consulting</span>
+                                <span class="availability-status available">Available</span>
+                            </div>
+                            <div class="availability-item">
+                                <span>Networking Projects</span>
+                                <span class="availability-status available">Immediate Start</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <h3>Ready to Connect?</h3>
+                        </div>
+                        <p class="contact-description">
+                            Whether you need network infrastructure expertise, modern web development, cloud computing
+                            or cybersecurity solutions, I'm here to help bring your projects to life.</p>
+                        <form id="contactForm"action="https://api.web3forms.com/submit" method="POST">
+
+                            <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="3c32dc6c-007a-4ae4-8220-fbe2f3bf3f9f">
+
+                            <!-- Form Inputs. Each input must have a name="" attribute -->
+                            <input type="text" id="name" name="name" placeholder="Your Name" />
+                            <input type="email" id="email" name="email" placeholder="Your Email" />
+                            <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+
+                            <!-- Honeypot Spam Protection -->
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                            <!-- Custom Confirmation / Success Page -->
+                            <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+                            <div class="contact-buttons">
+                                <button class="btn btn-primary btn-full">
+                                    <i data-lucide="mail"></i>
+                                    Send Email</button>
+                                    <p id="error" style="color: red;"></p>
+                                    <p id="success" style="color: green;"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+              <p>&copy; 2025 Beyuigueh Doratine All rights reserved.</p>
+  <p>
+    <a href="mailto:dorantinebeyuigueh@gmail.com" style="color: #ccc; text-decoration: none;">dorantinebeyuigueh@gmail.com</a> |
+    <a href="https://github.com/dorantinebeyuigueh-eng">GitHub</a> |
+    <a href="https://linkedin.com/in/beyuiguehdorantine">LinkedIn</a>
+  </p>
+    </footer>
+     <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -890,9 +890,20 @@ input, textarea {
     border: 2px solid #fff;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     z-index: 2;
+    transition: width 0.3s, height 0.3s, top 0.3s, right 0.3s;
+}
+@media (max-width: 600px) {
+    .hero-profile-img {
+        width: 70px;
+        height: 70px;
+        top: 5px;
+        right: 0;
+        border-width: 2px;
+    }
 }
 /* ...existing code... */
 .hero-content {
     position: relative;
     /* ...existing code... */
 }
+
